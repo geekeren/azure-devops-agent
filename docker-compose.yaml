@@ -2,7 +2,6 @@ version: "3"
 services:
   azure-devops-agent:
     image: mcr.microsoft.com/azure-pipelines/vsts-agent
-    container_name: azure-devops-docker-agent
     user: ${CURRENT_UID}
     deploy:
       replicas: 3
