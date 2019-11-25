@@ -2,6 +2,7 @@ version: "3"
 services:
   azure-devops-agent:
     image: mcr.microsoft.com/azure-pipelines/vsts-agent
+    user: ${CURRENT_UID}
     deploy:
       replicas: 3
     environment:
