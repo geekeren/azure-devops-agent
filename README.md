@@ -2,5 +2,5 @@
 
 ```
 CURRENT_UID=$(id -u):$(id -g)
-docker-compose up -d --scale azure-devops-agent=3
+docker-compose up -d --scale azure-devops-agent=3 --no-recreate
 ```

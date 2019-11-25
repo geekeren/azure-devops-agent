@@ -1,7 +1,7 @@
 version: "3"
 services:
   azure-devops-agent:
-    image: mcr.microsoft.com/azure-pipelines/vsts-agent
+    image: mcr.microsoft.com/azure-pipelines/vsts-agent:ubuntu-16.04-docker-18.06.1-ce-standard
     user: ${CURRENT_UID}
     deploy:
       replicas: 3
