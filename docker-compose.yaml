@@ -1,0 +1,11 @@
+version: "3"
+services:
+  azure-devops-agent:
+    image: mcr.microsoft.com/azure-pipelines/vsts-agent
+    deploy:
+      replicas: 3
+    environment:
+      VSTS_ACCOUNT:
+      VSTS_TOKEN:
+    volumes:
+      -  /var/run/docker:/var/run/docker
